@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  increment,
+  decrement,
+} from "./redux/reducers/counterReducer/CounterReducer.jsx";
+import "./App.css";
+import TodoForm from "./components/todoForm/TodoForm";
+import TodoList from "./components/todoList/TodoList";
+import { useState } from "react";
 
 function App() {
+  // const count = useSelector((state) => state.counter.count);
+  const [updatedData, setupdatedData] = useState(null);
+  const [isShown, setIsShown] = useState(false);
+  const dispatch = useDispatch();
+  console.log(updatedData);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {isShown&&
+      <TodoForm  updatedData={updatedData} setupdatedData={setupdatedData} />
+    }
+      
+      <TodoList  setIsShown={setIsShown} updatedData={updatedData} setupdatedData={setupdatedData} />
+
+    
     </div>
   );
 }

@@ -1,0 +1,78 @@
+
+
+.listButon{
+    display: flex;
+    gap: 10px;
+   align-items: center;
+}
+.deleteIcon{
+width: 70px;
+height: 30px;
+color: red;
+}
+.listButon button{
+    text-align: center;
+    width: 70px;
+    height: 40px;
+    border-radius: 50px;
+    background: rgb(37, 69, 82);
+    color: white;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.todolistContainer{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background:#ADEFD1FF;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.listBox{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+}
+
+.todoTitle h7{
+   
+    color: brown;
+}
+.todoTitle{
+    /* text-align: center; */
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    
+}
+.listButon {
+   
+    justify-content: center;
+}
+.listButon button{
+    background: blueviolet;
+    color: white;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 25px;
+}
+.delico{
+    color: red; 
+    width: 50px;
+    height: 30px;
+   
+}
+.deleteeIcon{
+display: flex;
+    justify-content: center;
+
+   
+}
